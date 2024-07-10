@@ -1,0 +1,53 @@
+.body {
+  font-family: "TT Norms Pro Serif";
+  color: #5d4037;
+  margin: 0;
+  padding: 0;
+}
+
+.about-container {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hours,
+.docs {
+  font-size: 14px;
+}
+
+.container h2 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.left,
+.right {
+  width: 50%;
+}
+
+.left h3 {
+  font-size: 20px;
+}
+
+.right h3 {
+  font-size: 20px;
+}
+
+.right h4 {
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.right p {
+  font-size: 16px;
+  margin-top: 5px;
+}

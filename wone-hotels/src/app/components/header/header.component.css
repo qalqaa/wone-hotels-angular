@@ -1,0 +1,88 @@
+.container {
+  position: fixed;
+  width: 28vw;
+  height: 100vh;
+}
+
+.header {
+  position: relative;
+  z-index: 0;
+  background: url(../../../assets/BG.png) lightgray -52.514px -42px/124.22% 110.093% no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+.logo {
+  width: 60px;
+  height: 60px;
+  padding: 10px;
+}
+
+.blur {
+  z-index: -1;
+  position: absolute;
+  -webkit-backdrop-filter: blur(50px);
+          backdrop-filter: blur(50px);
+  height: 100vh;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+
+.top-header button {
+  width: 25px;
+  background-repeat: no-repeat;
+}
+
+.list li {
+  width: 25px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+.burger-menu {
+  background-image: url(../../../assets/burger.svg);
+}
+
+.search {
+  background-image: url(../../../assets/search.svg);
+}
+
+.profile {
+  background-image: url(../../../assets/profile.svg);
+}
+
+.list .cart {
+  width: 50px;
+  background-position: 0% 50%;
+  background-image: url(../../../assets/cart.svg);
+  color: white;
+}
+
+.bottom-header {
+  height: 60px;
+}
+
+.bottom_list {
+  color: #55524e;
+}
+
+.bottom_list li:not(:first-child) {
+  width: 60px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+.gift {
+  background-image: url(../../../assets/gift.svg);
+}
+
+.tlephone {
+  background-image: url(../../../assets/phone.svg);
+}
+
+.sep {
+  width: 1px;
+  height: 60px;
+  background: var(--black-10, #e3e3e3);
+}

@@ -1,12 +1,45 @@
-<div class="body">
-  <div class="top-section">
-    <div class="search-container">
-      <div class="flex">
-        <button>Закрыть</button>
-      </div>
-    </div>
-    <div class="py-4">
-      <div class="container"></div>
-    </div>
+<div class="top-section h-16 w-full">
+  <div class="flex justify-end h-16 px-10 items-center">
+    <button class="close__btn">Закрыть</button>
   </div>
+</div>
+<div class="main-section w-full px-10 pt-12">
+  <input
+    class="w-full search-input pl-8 h-10 mb-10"
+    type="text"
+    placeholder="Массаж тела, акции, входной билет"
+  />
+  <ul class="history-list flex flex-col gap-5 mb-20">
+    <span class="history-title">Часто ищут</span>
+    <li class="history-item">Процедуры для тела</li>
+    <li class="history-item">Расслабляющий массаж головы, шеи, спины</li>
+    <li class="history-item">Прайс-лист</li>
+    <li class="history-item">Акции</li>
+    <li class="history-item active">Детский клуб</li>
+  </ul>
+  <ul class="ad-list flex gap-10 justify-center">
+    <li class="ad-item">
+      <div class="item-card flex flex-col items-center justify-between">
+        <h3 class="card-title mt-36 text-center">
+          Входной билет<br />«Взрослый + ребенок»
+        </h3>
+        <span class="card-descr pb-2">Бестселлер • Входной билет</span>
+      </div>
+    </li>
+    <li class="ad-item">
+      <div class="item-card flex flex-col items-center justify-between">
+        <h3 class="card-title mt-40 text-center">Путь к совершенству</h3>
+        <span class="card-descr pb-2">Бестселлер • Спа-программа</span>
+      </div>
+    </li>
+    <li class="ad-item">
+      <div class="item-card flex flex-col items-center justify-between">
+        <h3 class="card-title mt-36 text-center">
+          Абонемент 3 месяца <br />
+          (Spa-зона + Фитнес-центр)
+        </h3>
+        <span class="card-descr pb-2">Бестселлер • Абонемент</span>
+      </div>
+    </li>
+  </ul>
 </div>

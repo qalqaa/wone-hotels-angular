@@ -1,0 +1,43 @@
+.top-section {
+  background-color: #ddd7cd;
+}
+
+.close__btn {
+  color: #55524e;
+  font-size: 22px;
+}
+
+.search-input {
+  background-color: transparent;
+  border-bottom: 1px solid #cbc4bd;
+  background-image: url(../../../assets/search-b.svg);
+  background-repeat: no-repeat;
+  background-position: 0% 50%;
+  outline: none;
+}
+
+.main-section .history-list {
+  color: #55524e;
+  font-family: "TT Norms Pro Serif";
+  font-size: 18px;
+}
+
+.history-title {
+  font-family: "TT Norms Pro";
+  font-size: 16px;
+}
+
+.item-card {
+  width: 350px;
+  height: 380px;
+  background-color: #ddd7cd;
+  background-image: url(../../../assets/path24.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 0%;
+  color: #55524e;
+}
+
+.card-title {
+  font-family: "TT Norms Pro Serif";
+  font-size: 25px;
+}

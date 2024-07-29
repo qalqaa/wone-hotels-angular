@@ -1,16 +1,18 @@
 .app-container {
   width: 100%;
   height: 100vh;
+  overflow-x: hidden;
+  background-color: #f0ece1;
 }
 
 .app-content {
   margin-left: 28vw;
-  width: 70vw;
+  width: 72vw;
 }
 
 @font-face {
-    font-family: "TT Norms Pro";
-    src: url("../assets/fonts/TTNormsProRegular.otf") format("truetype");
-    font-style: normal;
-    font-weight: 400;
-  }
+  font-family: "TT Norms Pro";
+  src: url("../assets/fonts/TTNormsProRegular.otf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+}

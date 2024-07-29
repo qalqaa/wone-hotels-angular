@@ -1,0 +1,10 @@
+.burger-menu {
+  position: relative;
+  width: 25px;
+  height: 24px;
+  background-image: url(../../../../assets/burger.svg);
+}
+
+:host ::ng-deep .p-tieredmenu-overlay {
+  top: 0px !important;
+}

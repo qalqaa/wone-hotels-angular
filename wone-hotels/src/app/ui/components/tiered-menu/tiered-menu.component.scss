@@ -2,7 +2,44 @@
   position: relative;
   width: 25px;
   height: 24px;
-  background-image: url(../../../../assets/burger.svg);
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+
+.burger-menu::before,
+.burger-menu::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 1px;
+  background-color: #ffffff6e;
+  transition: all 0.3s ease;
+}
+
+.burger-menu::before {
+  transform: translateY(-5px);
+}
+
+.burger-menu::after {
+  transform: translateY(5px);
+}
+
+.burger-menu.open::before {
+  transform: rotate(45deg) translate(-5px, 5px);
+}
+
+.burger-menu.open::after {
+  transform: rotate(-45deg) translate(-5px, -5px);
+}
+
+.burger-menu.open::before,
+.burger-menu.open::after {
+  background-color: #ffffff;
 }
 
 :host ::ng-deep {

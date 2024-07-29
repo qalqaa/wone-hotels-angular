@@ -10,6 +10,14 @@ import { TieredMenuModule } from 'primeng/tieredmenu';
   styleUrl: './tiered-menu.component.scss',
 })
 export class TieredMenuComponent {
+  menuOpen = false;
+
+  toggleMenu(event: Event) {
+    this.menuOpen = !this.menuOpen;
+    const button = event.currentTarget as HTMLElement;
+    button.classList.toggle('open', this.menuOpen);
+  }
+  
   items: MenuItem[] | undefined;
   ngOnInit() {
     this.items = [

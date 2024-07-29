@@ -1,0 +1,41 @@
+:host ::ng-deep {
+  .p-dropdown {
+    height: 30px;
+  }
+
+  .p-dropdown-items-wrapper::-webkit-scrollbar {
+    width: 4px;
+  }
+
+  .p-dropdown-items-wrapper::-webkit-scrollbar-thumb {
+    background-color: #92d1d3;
+    border-radius: 10px;
+    transition: background-color 1s ease-in;
+  }
+
+  .p-dropdown-items-wrapper::-webkit-scrollbar-thumb:hover {
+    background-color: #57c0cc;
+  }
+
+  .p-dropdown-label {
+    font-size: 16px;
+    font-family: "TT Norms Pro Serif";
+    color: #5d4037;
+    padding: 0 5px;
+  }
+
+  .p-dropdown-item {
+    font-size: 16px;
+    font-family: "TT Norms Pro Serif";
+    color: #5d4037;
+  }
+
+  .p-highlight {
+    background-color: #e4f7f8;
+    color: #62d9dd;
+  }
+
+  .p-dropdown:not(.p-disabled).p-focus {
+    box-shadow: 0 0 0 0px transparent;
+  }
+}

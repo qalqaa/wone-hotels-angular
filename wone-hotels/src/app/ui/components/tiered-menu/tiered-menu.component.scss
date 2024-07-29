@@ -5,6 +5,29 @@
   background-image: url(../../../../assets/burger.svg);
 }
 
-:host ::ng-deep .p-tieredmenu-overlay {
-  top: 0px !important;
+:host ::ng-deep {
+  .p-tieredmenu-overlay {
+    top: 25px !important;
+    left: -18px !important;
+    background: transparent;
+  }
+
+  .p-tieredmenu.p-tieredmenu-overlay {
+    box-shadow: 0 0 0 0 transparent;
+    width: 250px;
+  }
+
+  .p-tieredmenu
+    .p-menuitem
+    > .p-menuitem-content
+    .p-menuitem-link
+    .p-menuitem-text {
+    color: white;
+  }
+
+  .p-tieredmenu
+    .p-menuitem:not(.p-highlight):not(.p-disabled)
+    > .p-menuitem-content:hover {
+    background: #176569;
+  }
 }

@@ -4,11 +4,11 @@ import { SearchComponent } from './pages/search/search.component';
 
 export const routes: Routes = [
   {
-    path: 'About',
+    path: '',
     component: AboutComponent,
   },
   {
-    path: 'Search',
+    path: 'search',
     component: SearchComponent,
   },
 ];

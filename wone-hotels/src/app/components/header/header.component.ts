@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { TieredMenuComponent } from '../../ui/components/tiered-menu/tiered-menu.component';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -8,4 +9,9 @@ import { TieredMenuComponent } from '../../ui/components/tiered-menu/tiered-menu
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss',
 })
-export class HeaderComponent {}
+export class HeaderComponent {
+  constructor(private router: Router) {}
+  navigateToSearch() {
+    this.router.navigate(['/search']);
+  }
+}

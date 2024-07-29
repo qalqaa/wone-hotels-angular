@@ -3,7 +3,7 @@
     <nav class="top-header flex justify-between px-10 py-5">
       <app-tiered-menu></app-tiered-menu>
       <ul class="flex list gap-11">
-        <li class="search"><button></button></li>
+        <li (click)="navigateToSearch()" class="search"><button></button></li>
         <li class="profile"><button></button></li>
         <li class="cart pl-6"><button>(0)</button></li>
       </ul>

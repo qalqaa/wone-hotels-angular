@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 import { MenuItem } from 'primeng/api';
 import { TieredMenuModule } from 'primeng/tieredmenu';
 
@@ -10,6 +11,8 @@ import { TieredMenuModule } from 'primeng/tieredmenu';
   styleUrl: './tiered-menu.component.scss',
 })
 export class TieredMenuComponent {
+  constructor(private router: Router) {}
+
   menuOpen = false;
 
   toggleMenu(event: Event) {
@@ -17,7 +20,7 @@ export class TieredMenuComponent {
     const button = event.currentTarget as HTMLElement;
     button.classList.toggle('open', this.menuOpen);
   }
-  
+
   items: MenuItem[] | undefined;
   ngOnInit() {
     this.items = [
@@ -41,6 +44,9 @@ export class TieredMenuComponent {
       },
       {
         label: 'О нас',
+        command: () => {
+          this.router.navigate(['']);
+        },
       },
       {
         label: 'Акции и новости',
